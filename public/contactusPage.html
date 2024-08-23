@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Page</title>
+</head>
+<body>
+
+    <p>this page is for contact forms</p>
+    <button id="back">Go back home</button>
+
+    <h1>Submit Prayer Request</h1>
+    <form id="prayerRequestForm" action="/submit-prayer-request" method="POST">
+        <label for="firstName">First Name:</label><br>
+        <input type="text" id="firstName" name="firstName" placeholder="Enter your first name..." required><br><br>
+        
+        <label for="lastName">Last Name:</label><br>
+        <input type="text" id="lastName" name="lastName" placeholder="Enter your last name..." required><br><br>
+
+        <label for="phoneNumber">Phone Number:</label><br>
+        <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number..." required><br><br>
+        
+        <label for="messageBody">Message Body:</label><br>
+        <textarea id="messageBody" name="messageBody" rows="4" cols="50" placeholder="Enter your prayer request here..." required></textarea><br><br>
+        
+        <label for="dateTime">Date/Time Needed:</label><br>
+        <input type="text" id="dateTime" name="dateTime" placeholder="Enter date/time needed..." required><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+    
+</body>
+<script>
+
+let x = document.getElementById("back");
+x.addEventListener("click", ()=>{
+    window.location.href = 'http://localhost:3000';
+    console.log("clicked");
+})
+
+document.getElementById('prayerRequestForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            const formData = {
+                description: document.getElementById('messageBody').value,
+                timeFrame: document.getElementById('dateTime').value,
+                firstName: document.getElementById('firstName').value,
+                lastName: document.getElementById('lastName').value,
+                phoneNumber: document.getElementById('phoneNumber').value
+            };
+
+            fetch('http://localhost:8080/api/prayer-request-forms', {
+                method: 'POST',
+                headers: {
+                    'Accept': '*/*',
+                    'Content-Type': 'application/json',
+                    'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTcyNDUyMDkzOCwiYXV0aCI6IlJPTEVfQURNSU4gUk9MRV9VU0VSIiwiaWF0IjoxNzI0NDM0NTM4fQ.aj7RKk-hNOmrEeBTnGAytpY5aT5jpoWAoHO6DzRoSwgrh0iBPoo0gIQrWR0lmKEM-B7h74C-Fm-BI-9rO4jxDQ'
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert('Prayer request submitted successfully!');
+                document.getElementById('prayerRequestForm').reset(); // Optionally reset the form
+            })
+            .catch(error => {
+                console.error('Error submitting prayer request:', error);
+                alert('Error submitting prayer request');
+            });
+        });
+
+
+</script>
+</html>

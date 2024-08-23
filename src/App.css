@@ -1,0 +1,132 @@
+.App {
+  text-align: center;
+}
+
+#wholepage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom,#302b63 , #0f0c29,#343159 );
+
+}
+
+#top-page{
+  width: 100%;
+  /* background-image: linear-gradient(to bottom, #24223e, #0f0c29, #302b63); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#middle-page{
+  padding: 60px;
+  color: #b1aaff;
+  display: flex;
+  width: 100%;
+  /* background-image: linear-gradient(to bottom, #302b63, #0f0c29, #24223e); */
+  justify-content: space-around;
+}
+
+#bottom-page{
+  text-align: center;
+  display: flex;
+  color: #b1aaff;
+  padding: 25px;
+  padding-bottom: 155px;
+}
+
+footer {
+  text-align: center;
+  color: #b1aaff;
+  padding: 20px;
+}
+
+#youtube-title {
+  padding: 20px;
+}
+
+#youtube {
+  border-radius: 25px;
+  box-shadow: 6px 6px 6px black;
+}
+
+
+body {
+  background-color: #0f0c29;
+  height: 100vh;
+}
+
+#caro{
+  
+  max-width: 1000px;
+}
+
+h1 {
+  padding-top: 35px;
+  font-size: 75px;
+}
+
+h1,
+h3 {
+    text-align: center;
+    color: #b1aaff;
+}
+
+h3 {
+  padding-bottom: 10px;
+}
+
+.mt-3 {
+  color: red;
+}
+.nav {
+  background-color: white;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
