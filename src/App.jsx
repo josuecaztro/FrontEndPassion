@@ -9,6 +9,10 @@ import ButtonComponent from './ButtonComponent';
 
 import GenerateNav from './navbar';
 
+import { SocialIcon } from 'react-social-icons'
+import NewCarousel from './newcarousel';
+
+
 
 
 //my frontend
@@ -44,20 +48,21 @@ function App() {
 {/* THE MIDDLE DIV */}
     <div id="middle-page">
       <div id="middle-left">
-       <h4>Visit our location</h4>
+       <h4>Visit Our Service</h4>
        <p>1530 4th Ave Folsom, PA 19033</p>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d97953.76532369152!2d-75.40154809584824!3d39.895397142499334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x89c6c28b142423f9%3A0xa6e57e023c0a6858!2s1530%204th%20Ave%2C%20Folsom%2C%20PA%2019033!3m2!1d39.8954263!2d-75.3191472!5e0!3m2!1sen!2sus!4v1724508630866!5m2!1sen!2sus" width="400" height="250" style={{border:"0;"}} id="googlemap" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
        <h4>Service Hours</h4>
        <ul>
         <li>Sunday 3:30PM - Main Service</li>
         <li>Wednesday 7:30PM - Prayer</li>
        </ul>
-       <h4>Social Networks:</h4>
-       <ul>
-        <li><a href="">Youtube</a></li>
-        <li><a href="">Facebook</a></li>
-        <li><a href="">Instagram</a></li>
-        <li><a href="">TikTok</a></li>
-       </ul>
+       <h4>Connect with Us</h4>
+       <div id="socialdiv">
+       <SocialIcon url="https://www.youtube.com/PastorRobertoC" class="social"/>
+      <SocialIcon url="https://www.facebook.com/IglesiaVozdeDiosPA/" class="social"/>
+      <SocialIcon url="https://www.tiktok.com/@iglesiavozdedios?is_from_webapp=1&sender_device=pc" class="social"/>
+      <SocialIcon url="https://www.instagram.com/folsomvozdedios/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D" class="social"/>
+      </div>
       </div>
       <div id="middle-middle">
       <Container className="mt-3">

@@ -4,9 +4,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Container from 'react-bootstrap/Container';
 
 
-
 function GenerateNav(){
-
 
 return (
 <Navbar expand="lg" className="bg-body-tertiary" class="nav" data-bs-theme="dark">

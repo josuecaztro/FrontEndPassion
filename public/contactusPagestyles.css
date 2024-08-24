@@ -21,24 +21,27 @@ textarea {
 
 #submit-id {
     font-size: 25px;
-    padding: 5px;
-    border-radius: 5px;
+    padding: 10px;
+    border-style: none;
+    border-radius: 8px;
     transition: transform 0.2s;
-
-    background-color: rgb(47, 181, 47);
+    background-color: rgb(0, 109, 0);
+    color: white;
 }
 
 #submit-id:hover {
-    background-color: rgb(41, 134, 41);
+    background-color: rgb(0, 147, 0);
     transform: scale(1.15);
 
 }
 
 #back {
-    background-color: yellow;
-    border-radius: 5px;
+    border-style: none;
+    padding: 10px;
+    background-color: rgb(158, 158, 0);
+    border-radius: 8px;
     transition: transform 0.2s;
-
+    color: white;
 }
 
 #back:hover{

@@ -7,13 +7,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to bottom,#302b63 , #0f0c29,#343159 );
-
 }
 
 #top-page{
   width: 100%;
-  /* background-image: linear-gradient(to bottom, #24223e, #0f0c29, #302b63); */
+  background-image: url("images/churchbig.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,25 +23,48 @@
 #middle-page{
   padding: 60px;
   color: #b1aaff;
+  background-color: #a6586b;
   display: flex;
   width: 100%;
-  /* background-image: linear-gradient(to bottom, #302b63, #0f0c29, #24223e); */
   justify-content: space-around;
 }
 
 #bottom-page{
+  width: 100%;
   text-align: center;
   display: flex;
   color: #b1aaff;
+  background-color: #6c5b7b;
   padding: 25px;
   padding-bottom: 155px;
   gap: 150px;  
+  justify-content: space-evenly;
+}
+
+#googlemap {
+  border-radius: 8px;
+  box-shadow: 6px 6px 6px black;
 }
 
 footer {
   text-align: center;
   color: #b1aaff;
+  background-color: #355c7d;
   padding: 20px;
+}
+
+#socialdiv {
+  display: flex;
+  padding: 5px;
+  gap: 15px;
+}
+
+.social {
+  transition: transform 0.2s;
+}
+
+.social:hover{
+  transform: scale(1.3);
 }
 
 #youtube-title {
@@ -58,7 +82,6 @@ footer {
 
 
 body {
-  background-color: #0f0c29;
   height: 100vh;
 }
 

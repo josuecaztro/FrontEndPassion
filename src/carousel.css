@@ -4,3 +4,15 @@ img {
     border: 2px solid #b1aaff;
 
 }
+
+
+
+.carousel {
+    width: 400px; /* Adjust the height to match your images */
+  }
+  
+  .carousel img {
+    height: 100%; /* Ensure the images fill the height */
+    object-fit: cover; /* Optionally adjust how the image fits within the container */
+  }
+  
