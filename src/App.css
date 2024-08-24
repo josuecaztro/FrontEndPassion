@@ -11,6 +11,8 @@
 
 #top-page{
   width: 100%;
+  display: flex;
+  height: 600px;
   background-image: url("images/churchbig.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -18,27 +20,55 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-family: "sinter", sans-serif;
+font-weight: 700;
+font-style: normal;
+}
+
+#headerbutton{
+  background-color: white;
+
+  /* background-color: darkblue; */
+  border-radius: 10px;
+  border-style: none;
+  padding: 15px;
 }
 
 #middle-page{
   padding: 60px;
-  color: #b1aaff;
-  background-color: #a6586b;
+  color: white;
+  background-color: #3b6b94;
   display: flex;
   width: 100%;
   justify-content: space-around;
+
 }
+
+
 
 #bottom-page{
   width: 100%;
   text-align: center;
   display: flex;
-  color: #b1aaff;
-  background-color: #6c5b7b;
+  color: #3D2B1F;
+  background-color: #c7bca2;
   padding: 25px;
-  padding-bottom: 155px;
+  padding-bottom: 135px;
   gap: 150px;  
   justify-content: space-evenly;
+  font-family: "sinter", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+
+}
+
+#middle-page h4 {
+  font-family: "sinter", sans-serif;
+font-weight: 700;
+font-style: normal;
 }
 
 #googlemap {
@@ -47,10 +77,22 @@
 }
 
 footer {
-  text-align: center;
-  color: #b1aaff;
-  background-color: #355c7d;
-  padding: 20px;
+  text-align:start;
+  color: #EEE3CB;
+  background-color: #3D2B1F;
+  padding: 40px;
+}
+
+#footerid {
+  display: flex;
+  gap: 40px;
+}
+
+#footerfont{
+  font-family: "sinter", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
 }
 
 #socialdiv {
@@ -98,7 +140,6 @@ h1 {
 h1,
 h3 {
     text-align: center;
-    color: #b1aaff;
 }
 
 h3 {

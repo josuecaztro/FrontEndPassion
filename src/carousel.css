@@ -1,14 +1,14 @@
 img {
-    max-width: 400px;
+    max-width: 500px;
     border-radius: 8px;
-    border: 2px solid #b1aaff;
+    border: 2px solid #ffffff;
 
 }
 
 
 
 .carousel {
-    width: 400px; /* Adjust the height to match your images */
+    width: 500px; /* Adjust the height to match your images */
   }
   
   .carousel img {
