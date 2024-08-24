@@ -41,7 +41,7 @@ function App() {
   <h1 id="titleh1">Iglesia Voz de Dios</h1>
   <CoolButton text="We're glad you're here." onClick={scrollToDiv}/>
   {/* <h3>Pastor Roberto Castro</h3> */}
-      <ButtonComponent /> 
+      {/* <ButtonComponent />  */}
   {/* <DisplayHomeImg/> */}
   <div id="caro">
       </div>

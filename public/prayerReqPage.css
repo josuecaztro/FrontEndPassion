@@ -1,58 +1,13 @@
 body {
-    background-image: linear-gradient(to right,#302b63 , #0f0c29,#343159 );
-    text-align:center;
-    color: #b1aaff;
+    background: linear-gradient(to bottom,#87CEFA,#F0F8FF );
+    margin-top: 50px;
+    margin-bottom: 100px;
+    /* color: #2F4F4F; */
+    color: #333333;
 }
 
-input {
-    width: 250px;
-    background-color: rgb(205, 255, 255);
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    font-size: 20px;
-}
-
-textarea {
-    background-color: rgb(205, 255, 255);
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-
-}
-
-#submit-id {
-    font-size: 25px;
-    padding: 10px;
-    border-style: none;
-    border-radius: 8px;
-    transition: transform 0.2s;
-    background-color: rgb(0, 109, 0);
-    color: white;
-}
-
-#submit-id:hover {
-    background-color: rgb(0, 147, 0);
-    transform: scale(1.15);
-
-}
-
-#back {
-    border-style: none;
-    padding: 10px;
-    background-color: rgb(158, 158, 0);
-    border-radius: 8px;
-    transition: transform 0.2s;
-    color: white;
-}
-
-#back:hover{
-    background-color: rgb(202, 202, 2);
-    transform: scale(1.15);
-
-}
-
-#verse {
-    padding: 10px;
-    border: 5px double #b1aaff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-
+h2, h1, h4, h3 {
+    font-family: "sinter", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
