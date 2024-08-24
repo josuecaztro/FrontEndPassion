@@ -34,6 +34,7 @@
   color: #b1aaff;
   padding: 25px;
   padding-bottom: 155px;
+  gap: 150px;  
 }
 
 footer {
@@ -43,6 +44,10 @@ footer {
 }
 
 #youtube-title {
+  padding: 20px;
+}
+
+#calendar-title {
   padding: 20px;
 }
 
@@ -117,6 +122,11 @@ h3 {
   to {
     transform: rotate(360deg);
   }
+}
+
+#googleapi {
+  box-shadow: 6px 6px 6px black;
+  border-radius: 5px;
 }
 
 
