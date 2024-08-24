@@ -1,0 +1,55 @@
+body {
+    background-image: linear-gradient(to right,#302b63 , #0f0c29,#343159 );
+    text-align:center;
+    color: #b1aaff;
+}
+
+input {
+    width: 175px;
+    background-color: rgb(205, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+}
+
+textarea {
+    background-color: rgb(205, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+}
+
+#submit-id {
+    font-size: 25px;
+    padding: 5px;
+    border-radius: 5px;
+    transition: transform 0.2s;
+
+    background-color: rgb(47, 181, 47);
+}
+
+#submit-id:hover {
+    background-color: rgb(41, 134, 41);
+    transform: scale(1.15);
+
+}
+
+#back {
+    background-color: yellow;
+    border-radius: 5px;
+    transition: transform 0.2s;
+
+}
+
+#back:hover{
+    background-color: rgb(202, 202, 2);
+    transform: scale(1.15);
+
+}
+
+#verse {
+    padding: 10px;
+    border: 5px double #b1aaff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+}
