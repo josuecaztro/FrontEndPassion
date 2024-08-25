@@ -18,7 +18,7 @@ const ButtonComponent = () => {
   };
 
   return (
-    <button onClick={handleClick}>Test Button</button>
+    <button onClick={handleClick}>Show Prayer Requests</button>
   );
 };
 

@@ -3,6 +3,10 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Container from 'react-bootstrap/Container';
 
+import { BrowserRouter as Router, Route, Routes, Link, BrowserRouter } from 'react-router-dom';
+
+
+
 
 function GenerateNav(){
 
@@ -14,6 +18,7 @@ function GenerateNav(){
   }
 
 return (
+  <>
 <Navbar expand="lg" className="bg-body-tertiary" class="nav" data-bs-theme="dark">
 <Container>
   <Navbar.Brand href="#home">Iglesia Voz de Dios</Navbar.Brand>
@@ -21,6 +26,7 @@ return (
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="me-auto">
       <Nav.Link href="#home">Home</Nav.Link>
+      {/* <Nav.Link as={Link} to="/ContactUsPage">About Us</Nav.Link> */}
       <Nav.Link href="#link">About Us</Nav.Link>
       <Nav.Link href="#link">Mission</Nav.Link>
       <Nav.Link href="#link">Events</Nav.Link>
@@ -32,7 +38,7 @@ return (
         </NavDropdown.Item>
         <NavDropdown.Item href="#action/3.3" onClick={scrollToFooter}>Address</NavDropdown.Item>
         <NavDropdown.Divider />
-        <NavDropdown.Item href="#action/3.4">
+        <NavDropdown.Item href="/contactPage.html">
           Send Message
         </NavDropdown.Item>
       </NavDropdown>
@@ -40,6 +46,14 @@ return (
   </Navbar.Collapse>
 </Container>
 </Navbar> 
+{/* 
+<BrowserRouter>
+<Routes>
+<Route path="/ContactUsPage" element={<DeployContactUs/>}/>
+</Routes>
+</BrowserRouter> */}
+
+</>
 )
 };
 

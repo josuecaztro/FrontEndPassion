@@ -6,6 +6,7 @@ import CarouselFadeExample from './carousel';
 import './App.css';
 import DisplayHomeImg from './homephoto';
 import ButtonComponent from './ButtonComponent';
+import ButtonComponent2 from './ButtonComponent2';
 
 import GenerateNav from './navbar';
 
@@ -13,6 +14,8 @@ import { SocialIcon } from 'react-social-icons'
 import NewCarousel from './newcarousel';
 
 import CoolButton from './AwesomeButton';
+
+
 
 
 //my frontend
@@ -41,7 +44,8 @@ function App() {
   <h1 id="titleh1">Iglesia Voz de Dios</h1>
   <CoolButton text="We're glad you're here." onClick={scrollToDiv}/>
   {/* <h3>Pastor Roberto Castro</h3> */}
-      {/* <ButtonComponent />  */}
+      <ButtonComponent /> 
+      <ButtonComponent2/>
   {/* <DisplayHomeImg/> */}
   <div id="caro">
       </div>
