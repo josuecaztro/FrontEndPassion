@@ -1,20 +1,18 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
-
 import CarouselFadeExample from './carousel';
 import './App.css';
 import DisplayHomeImg from './homephoto';
 import ButtonComponent from './ButtonComponent';
 import ButtonComponent2 from './ButtonComponent2';
-
 import GenerateNav from './navbar';
-
 import { SocialIcon } from 'react-social-icons'
 import NewCarousel from './newcarousel';
-
 import CoolButton from './AwesomeButton';
-
+import AboutPage from './WhoWeAre';
+//route imports
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 
 
@@ -35,6 +33,7 @@ function App() {
   return (
     <>
 
+
   <GenerateNav/>
 
   <div id="wholepage">
@@ -44,8 +43,8 @@ function App() {
   <h1 id="titleh1">Iglesia Voz de Dios</h1>
   <CoolButton text="We're glad you're here." onClick={scrollToDiv}/>
   {/* <h3>Pastor Roberto Castro</h3> */}
-      <ButtonComponent /> 
-      <ButtonComponent2/>
+      {/* <ButtonComponent /> 
+      <ButtonComponent2/> */}
   {/* <DisplayHomeImg/> */}
   <div id="caro">
       </div>
@@ -95,7 +94,7 @@ function App() {
     <div id="bottom-page">
      <div>
       <h2 id="youtube-title">Missed last Sunday's service?</h2>
-     <iframe width="560" height="315" src="https://www.youtube.com/embed/rMp7kdSTAz0?si=OlKUzs_CqEfsACoA&autoplay=1&mute=1" id="youtube" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+     <iframe width="616" height="347" src="https://www.youtube.com/embed/rMp7kdSTAz0?si=OlKUzs_CqEfsACoA&autoplay=1&mute=1" id="youtube" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
      </div>
 
      <div>
@@ -130,6 +129,11 @@ function App() {
 </br>
         <p>All rights reserved - Iglesia Voz de Dios © 2024</p>
         </footer>
+
+
+
+
+
   </>
 );
 }

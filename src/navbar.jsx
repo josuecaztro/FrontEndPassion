@@ -3,6 +3,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Container from 'react-bootstrap/Container';
 
+
 import { BrowserRouter as Router, Route, Routes, Link, BrowserRouter } from 'react-router-dom';
 
 
@@ -27,9 +28,11 @@ return (
     <Nav className="me-auto">
       <Nav.Link href="#home">Home</Nav.Link>
       {/* <Nav.Link as={Link} to="/ContactUsPage">About Us</Nav.Link> */}
-      <Nav.Link href="#link">About Us</Nav.Link>
+      {/* <Nav.Link as={Link} to="/WhoWeAre">Who We Are</Nav.Link> */}
+      <Nav.Link href="#link">Who We Are</Nav.Link>
       <Nav.Link href="#link">Mission</Nav.Link>
       <Nav.Link href="#link">Events</Nav.Link>
+      <Nav.Link href="#link">Donate</Nav.Link>
       <Nav.Link href="/prayerReqPage.html">Prayer Request</Nav.Link>
       <NavDropdown title="Contact Us" id="basic-nav-dropdown">
         <NavDropdown.Item href="#action/3.1" onClick={scrollToFooter}>E-Mail</NavDropdown.Item>

@@ -5,7 +5,7 @@
 } */
 
 body {
-    background-color: #6b2b2b;
+    background: linear-gradient(to bottom, #f7f7f7, #e0e0e0) !important;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -14,13 +14,18 @@ body {
     padding-bottom: 50px;
 }
 
+.container {
+    margin: 70px;
+}
+
 
 
 #bible-quote {
-    padding: 25px;
+    padding: 10px;
     font-family: "sinter", sans-serif;
     font-weight: 700;
     font-style: normal;
+    text-align: center;
 }
 
 
@@ -66,13 +71,11 @@ body {
 
 
 #back-button {
-    justify-self: flex-start;
-    align-self: flex-start;
-    display: inline-block;
+
     padding: 0.75rem 1.5rem;
     background-color: #007bff; /* Primary blue color */
     color: #ffffff; /* White text */
-    font-size: 1rem;
+    font-size: 0.75rem;
     font-weight: 500;
     text-align: center;
     text-decoration: none;
